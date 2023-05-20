@@ -56,8 +56,8 @@ sudo cp ../inc/*.h /usr/local/include/
 
 ## Building
 
-1. Compile `rtl_capture.c using a C compiler (gcc -o rtl_capture rtl_capture.c -lrtlsdr -lpthread) and start scan so you have something to try it on...
-2. Compile `compress.c using a C++ compiler (g++ -o compress compress.cpp -lfftw3 -lwavelib), linking the FFTW and WaveLib libraries.
+1. Compile `rtl_capture.c` using a C compiler (gcc -o rtl_capture rtl_capture.c -lrtlsdr -lpthread) and start scan so you have something to try it on...
+2. Compile `compress.c` using a C++ compiler (g++ -o compress compress.cpp -lfftw3 -lwavelib), linking the FFTW and WaveLib libraries.
 3. Run the program with the binary file of IQ samples as input.
 4. Compile `decompress.cpp` using a C++ (g++ -o decompress decompress.cpp -lwavelib) compiler, linking the WaveLib library.
 5. Run the program to perform inverse wavelet transform on the transformed data.
