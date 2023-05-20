@@ -36,6 +36,7 @@ Please note that to retrieve the original time-domain signal, you would need to 
 This project requires the FFTW and WaveLib libraries. Please ensure these libraries are properly installed and linked when building the project.
 
 - Installing wavelib
+    '''bash
 # Navigate to the 'src' directory in your local copy of the 'wavelib' repository
 cd /path/to/wavelib/src
 
@@ -50,6 +51,7 @@ sudo mv libwavelib.a /usr/local/lib/
 
 # Copy all header files to a directory where the compiler can find them
 sudo cp ../inc/*.h /usr/local/include/
+    '''bash
 ## Building
 
 1. Compile `rtl_capture.c using a C++ compiler and start scan so you have something to try it on...
