@@ -1,5 +1,5 @@
 # IQ-Sample-Compression-with-FFT-and-DWT
-hahaha, lets see if this works...
+hahaha, lets see if this works... we might have to tune the dwt algorithm to work with the fft data we have... it seems like it is not compressing yet.. so must fix.
 ## I got inspired by a Spacex video where they use FFT and DWT to transform data for their rocket engine simulation... Let's try it for Radio Wave IQ samples
 
     Wavelet Type: For RTL-SDR IQ data, it would be better to start with Daubechies wavelets (dbN). Daubechies wavelets, especially of higher orders, are a popular choice for signal processing applications because they can represent a wide variety of signals well. You could start with db4 or db6, and adjust as necessary based on your results.
