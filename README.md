@@ -50,7 +50,7 @@ sudo mv libwavelib.a /usr/local/lib/
 
 # Copy all header files to a directory where the compiler can find them
 sudo cp ../inc/*.h /usr/local/include/
-```bash
+'''bash
 
 ## Building
 
