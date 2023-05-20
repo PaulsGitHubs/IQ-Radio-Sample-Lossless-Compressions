@@ -1,2 +1,3 @@
 # IQ-Sample-Compression-with-FFT-and-DWT
 hahaha, lets see if this works...
+## I got inspired by a Spacex video where they use FFT and DWT to transform data for their rocket engine simulation... Let's try it for Radio Wave IQ samples
