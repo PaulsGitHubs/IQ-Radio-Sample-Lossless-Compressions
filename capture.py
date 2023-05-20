@@ -12,15 +12,8 @@ sdr.center_freq = 100e6     # 100 MHz
 sdr.freq_correction = 60   # PPM
 sdr.gain = 'auto'
 
-# buffer to store the samples
-buffer = np.array([], dtype=np.complex64)
-
 def signal_handler(sig, frame):
     print('You pressed Ctrl+C!')
-    # save the data to the file
-    with open('input.bin', 'wb') as f:
-        buffer.tofile(f)
-
     # cleanup
     sdr.close()
     sys.exit(0)
@@ -32,8 +25,10 @@ print('Press Ctrl+C to stop the recording')
 while True:
     # read_samples returns a numpy array of complex numbers and blocks until data is available
     samples = sdr.read_samples(256*1024) # 256K samples 
-    # concatenate the samples to the buffer
-    buffer = np.concatenate((buffer, samples))
+    for i in range(0, len(samples), 1024):
+        buffer = samples[i:i+1024]
+        # save the data to the file
+        with open('input.bin', 'ab') as f:
+            buffer.tofile(f)
 
 # to stop capturing, press Ctrl+C
-
