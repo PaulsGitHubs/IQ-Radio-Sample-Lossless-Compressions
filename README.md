@@ -10,7 +10,7 @@ hahaha, lets see if this works...
 
 ## Overview
 
-The `main.cpp` file performs the following steps:
+The `compress.cpp` file performs the following steps:
 
 1. Reads the SDR IQ samples from a binary file.
 2. Applies FFT to the samples.
