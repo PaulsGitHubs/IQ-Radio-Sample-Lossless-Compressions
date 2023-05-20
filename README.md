@@ -16,14 +16,14 @@ The `rtl_capture.c` file captures the IQ signals:
 2. Starts capture
 3. Then saves the file in binary
 
-The `compress.c` file performs the following steps:
+The `compress.cpp` file performs the following steps:
 
 1. Reads the SDR IQ samples from a binary file.
 2. Applies FFT to the samples.
 3. Performs a wavelet transform on the FFT output.
 4. Stores the transformed data in binary files for the real and imaginary parts separately.
 
-The `decompress.c` file performs the inverse operations:
+The `decompress.cpp` file performs the inverse operations:
 
 1. Reads the wavelet-transformed data from binary files.
 2. Applies inverse wavelet transform to the data.
