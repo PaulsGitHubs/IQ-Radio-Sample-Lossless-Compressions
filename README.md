@@ -37,8 +37,10 @@ This project requires the FFTW and WaveLib libraries. Please ensure these librar
 
 - Installing wavelib
 ```bash
+#clone it
+git clone https://github.com/rafat/wavelib
 # Navigate to the 'src' directory in your local copy of the 'wavelib' repository
-cd /path/to/wavelib/src
+cd wavelib
 # Compile all .c files in the directory to .o files
 gcc -c *.c
 
