@@ -10,6 +10,12 @@ hahaha, lets see if this works...
 
 ## Overview
 
+The `rtl_capture.cpp` file captures the IQ signals:
+
+1. Opens RTL SDR 
+2. Starts capture
+3. Then saves the file in binary
+
 The `compress.cpp` file performs the following steps:
 
 1. Reads the SDR IQ samples from a binary file.
