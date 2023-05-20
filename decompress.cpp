@@ -1,5 +1,6 @@
 #include <fstream>
 #include "wavelib.h"  // Include Wavelib library
+#include <iostream>
 
 const int N = 1024; // Assuming that you have 1024 samples
 
