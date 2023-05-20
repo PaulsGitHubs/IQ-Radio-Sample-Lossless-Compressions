@@ -37,10 +37,11 @@ This project requires the FFTW and WaveLib libraries. Please ensure these librar
 
 ## Building
 
-1. Compile `main.cpp` using a C++ compiler, linking the FFTW and WaveLib libraries.
-2. Run the program with the binary file of IQ samples as input.
-3. Compile `decompress.cpp` using a C++ compiler, linking the WaveLib library.
-4. Run the program to perform inverse wavelet transform on the transformed data.
+1. Compile `rtl_capture.c using a C++ compiler and start scan so you have something to try it on...
+2. Compile `compress.c using a C++ compiler, linking the FFTW and WaveLib libraries.
+3. Run the program with the binary file of IQ samples as input.
+4. Compile `decompress.cpp` using a C++ compiler, linking the WaveLib library.
+5. Run the program to perform inverse wavelet transform on the transformed data.
 
 ## Notes
 
