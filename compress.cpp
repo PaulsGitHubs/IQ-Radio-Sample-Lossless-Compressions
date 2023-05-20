@@ -19,15 +19,26 @@ int main() {
     // Read the data from binary file and fill in[] array
     if(input.is_open()) {
         for(int i = 0; i < N; i++) {
-            double real_part;
+            double real_part, imag_part;
             input.read((char*)&real_part, sizeof(double));
+            input.read((char*)&imag_part, sizeof(double));
             in[i][0] = real_part; // Real part of the sample
-            in[i][1] = 0; // Imaginary part of the sample is assumed to be 0
+            in[i][1] = imag_part; // Imaginary part of the sample
         }
     }
     input.close();
 
     fftw_execute(p); // Now out[] contains the FFT of your data.
+
+    // Save the FFT output to a binary file
+    std::ofstream output_fft("fft_output.bin", std::ios::binary);
+    if(output_fft.is_open()) {
+        for(int i = 0; i < N; i++) {
+            output_fft.write((char*)&out[i][0], sizeof(double));  // Write real part
+            output_fft.write((char*)&out[i][1], sizeof(double));  // Write imaginary part
+        }
+    }
+    output_fft.close();
 
     // Perform wavelet transform on the FFT data.
     // Wavelib requires the input data in a one-dimensional array.
@@ -88,4 +99,3 @@ int main() {
 
     return 0;
 }
-
