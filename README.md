@@ -2,6 +2,8 @@
 hahaha, lets see if this works... we might have to tune the dwt algorithm to work with the fft data we have... it seems like it is not compressing yet.. so must fix.
 ## I got inspired by a Spacex video where they use FFT and DWT to transform data for their rocket engine simulation... but we are going to do it differently...
 
+I am also thinking we should teach it to interpret the compressed format... curious to see if this is attainable and how good the quality will be..
+
 1. record iq samples
 2. split up into more frequencies
 3. frequency stretch by a factor (to preserve data quality while compress)
