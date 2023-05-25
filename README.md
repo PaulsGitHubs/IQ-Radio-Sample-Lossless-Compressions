@@ -71,6 +71,9 @@ sudo cp ../inc/*.h /usr/local/include/
 4. Compile `decompress.cpp` using a C++ (g++ -o decompress decompress.cpp -lwavelib) compiler, linking the WaveLib library.
 5. Run the program to perform inverse wavelet transform on the transformed data.
 
+Compile compress_image.cpp with g++ -std=c++17 compress_image.cpp -o compress_image -I/usr/include/opencv4 -L/usr/local/lib -lopencv_core -lopencv_imgcodecs -lopencv_imgproc -lstdc++fs
+
+
 ## Notes
 
 Remember to set the number of samples (N) as per your input data. In these scripts, we assume N = 1024. Also, adjust the wavelet type and levels of wavelet decomposition according to your requirements. The default wavelet used in this project is Daubechies 4 (db4) with 4 levels of decomposition.
