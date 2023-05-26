@@ -44,6 +44,12 @@ The files were sorted from smallest to largest. The brotli, xz (lzma), and gzip 
 
 Please make sure to install all required Python packages before running the scripts. Python 3 is recommended.
 
+These libraries can be installed with pip using the provided `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
+```
+
 ## Future Work
 
 Further compression methods and signal processing techniques will be explored to find the most efficient process for handling IQ samples from SDRs.
