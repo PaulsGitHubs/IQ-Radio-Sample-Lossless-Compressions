@@ -1,21 +1,56 @@
 # IQ-Sample-Compression-with-FFT-and-DWT
-hahaha, lets see if this works... we might have to tune the dwt algorithm to work with the fft data we have... it seems like it is not compressing yet.. so must fix.
-## I got inspired by a Spacex video where they use FFT and DWT to transform data for their rocket engine simulation... but we are going to do it differently...
 
-I am also thinking we should teach it to interpret the compressed format... curious to see if this is attainable and how good the quality will be..
+This project involves signal processing and compression of IQ samples from a Software Defined Radio (SDR). Various signal processing techniques such as FFT, DWT, DCT, and DST are applied to the data, and the results are subsequently compressed using various algorithms.
 
-1. record iq samples
-2. split up into more frequencies
-3. frequency stretch by a factor (to preserve data quality while compress)
-4. fft
-5. dwt (tuned for our application)
-6. storage algorithm for fast retrieval and decompress
+## Signal Processing
 
-    Wavelet Type: For RTL-SDR IQ data, it would be better to start with Daubechies wavelets (dbN). Daubechies wavelets, especially of higher orders, are a popular choice for signal processing applications because they can represent a wide variety of signals well. You could start with db4 or db6, and adjust as necessary based on your results.
+- Fast Fourier Transform (FFT)
+- Discrete Wavelet Transform (DWT)
+- Discrete Cosine Transform (DCT)
+- Discrete Sine Transform (DST)
 
-    Extension Mode: The extension mode for the DWT doesn't typically have a large effect on the result, especially for long signals. You can start with the symmetric extension ("sym") because it makes no assumptions about the signal beyond the boundary and thus can be a safe choice.
+## Compression Algorithms
 
-    Decomposition Levels: The number of decomposition levels you should use depends on the specific features you're interested in your data. A larger number of levels will give you more detailed frequency information, but at the cost of losing some time information. Conversely, fewer levels will preserve more time information, but at a coarser frequency resolution. A good starting point might be around 3-4 levels, but this would largely depend on your application and the characteristics of your data.
+The following compression methods are tested in this project:
+
+- gzip
+- bz2
+- lzma (xz)
+- zlib
+- zip
+- tar
+- lz4
+- brotli
+
+## Results
+
+The compression results in terms of output file sizes for some of the top performing algorithms:
+
+- output_dct.bin.brotli: 53.18 MB
+- output_dst.bin.brotli: 53.18 MB
+- output_dct.bin.xz: 53.31 MB
+- output_dst.bin.xz: 53.31 MB
+- output_dct.bin.gz: 53.86 MB
+- output_dct.bin.zip: 53.86 MB
+- output_dct.bin.tar.gz: 53.87 MB
+- output_dst.bin.zlib: 53.87 MB
+- output_dst.bin.gz: 53.87 MB
+- output_dst.bin.zip: 53.87 MB
+- output_dst.bin.tar.gz: 53.87 MB
+
+The files were sorted from smallest to largest. The brotli, xz (lzma), and gzip compression methods provided the best results in terms of space reduction.
+
+## Running the Project
+
+Please make sure to install all required Python packages before running the scripts. Python 3 is recommended.
+
+## Future Work
+
+Further compression methods and signal processing techniques will be explored to find the most efficient process for handling IQ samples from SDRs.
+
+## Contributing
+
+Please feel free to fork the project, make improvements, and open a pull request.
 
 ## Overview
 
