@@ -71,7 +71,7 @@ Further compression methods and signal processing techniques will be explored to
 
 Please feel free to fork the project, make improvements, and open a pull request.
 
-## Overview
+## C++ Overview
 
 The `rtl_capture.c` file captures the IQ signals:
 
@@ -94,7 +94,7 @@ The `decompress.cpp` file performs the inverse operations:
 
 Please note that to retrieve the original time-domain signal, you would need to apply inverse FFT to the output.
 
-## Dependencies
+## C++ Dependencies
 
 This project requires the FFTW and WaveLib libraries. Please ensure these libraries are properly installed and linked when building the project.
 
