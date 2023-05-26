@@ -1,0 +1,9 @@
+numpy
+pywt
+scipy
+lzma
+brotli
+lz4
+zipfile
+tarfile
+bz2
