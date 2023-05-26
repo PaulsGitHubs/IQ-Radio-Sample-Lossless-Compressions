@@ -25,6 +25,14 @@ The following lossless compression methods are tested in this project:
 - lz4
 - brotli
 
+## PyQt Interface 
+Found in the PyQt folder
+- For transformation and compression
+- For decompression and detransformation
+
+![Screenshot from 2023-05-26 13-41-21](https://github.com/PaulsGitHubs/IQ-Radio-Sample-Lossless-Compressions/assets/102178068/d05c6a55-e93d-4f64-89cc-312073cfa99d)
+
+
 ## Results
 
 The compression results in terms of output file sizes for some of the top performing algorithms:
