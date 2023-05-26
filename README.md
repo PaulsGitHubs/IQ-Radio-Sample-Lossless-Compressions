@@ -3,7 +3,7 @@
 ## This Repo is not done yet 
 - The Python Side works fine
 - The C++ side of this needs work
-This project involves signal processing and compression of IQ samples from a Software Defined Radio (SDR). Various signal processing techniques such as FFT, DWT, DCT, and DST are applied to the data, and the results are subsequently compressed using various algorithms.
+- This project involves signal processing and compression of IQ samples from a Software Defined Radio (SDR). Various signal processing techniques such as FFT, DWT, DCT, and DST are applied to the data, and the results are subsequently compressed using various algorithms.
 
 ## Signal Processing
 
