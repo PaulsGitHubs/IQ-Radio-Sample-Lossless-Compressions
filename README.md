@@ -40,6 +40,8 @@ The compression results in terms of output file sizes for some of the top perfor
 
 The files were sorted from smallest to largest. The brotli, xz (lzma), and gzip compression methods provided the best results in terms of space reduction.
 
+- Note: these were done on a 61 MB IQ binary.
+
 ## Running the Project
 
 Please make sure to install all required Python packages before running the scripts. Python 3 is recommended.
