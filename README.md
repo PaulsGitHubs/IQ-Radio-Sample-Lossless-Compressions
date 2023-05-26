@@ -6,8 +6,8 @@ This project involves signal processing and compression of IQ samples from a Sof
 
 ## Signal Processing
 
-- Fast Fourier Transform (FFT)
-- Discrete Wavelet Transform (DWT)
+- Fast Fourier Transform (FFT) - DOES NOT RESULT IN LOSSLESS IF YOU USE
+- Discrete Wavelet Transform (DWT) - DOES NOT RESULT IN LOSSLESS IF YOU USE
 - Discrete Cosine Transform (DCT)
 - Discrete Sine Transform (DST)
 
