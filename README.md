@@ -11,7 +11,7 @@ This project involves signal processing and compression of IQ samples from a Sof
 
 ## Compression Algorithms
 
-The following compression methods are tested in this project:
+The following lossless compression methods are tested in this project:
 
 - gzip
 - bz2
