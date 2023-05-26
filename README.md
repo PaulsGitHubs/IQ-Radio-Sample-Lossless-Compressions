@@ -1,4 +1,5 @@
-# IQ-Sample-Compression-with-FFT-and-DWT
+# 
+IQ-Radio-Sample-Lossless-Compressions 
 
 This project involves signal processing and compression of IQ samples from a Software Defined Radio (SDR). Various signal processing techniques such as FFT, DWT, DCT, and DST are applied to the data, and the results are subsequently compressed using various algorithms.
 
